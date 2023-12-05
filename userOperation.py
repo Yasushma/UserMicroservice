@@ -11,7 +11,7 @@ from sqlalchemy.orm import sessionmaker
 #from migrate import Migrate
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:postgres@localhost:5432/pythonpoc"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://postgres:postgres@100.25.149.47:5432/pythonpoc"
 db = SQLAlchemy(app)
 #app.app_context().push()
 
