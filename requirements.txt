@@ -33,7 +33,7 @@ psycopg2~=2.8.6
 psycopg2-binary
 pymongo==3.12.3
 pytz==2023.3.post1
-PyYAML==6.0.1
+PyYAML
 SQLAlchemy~=2.0.0
 sqlalchemy-orm==1.2.10
 sqlparse
