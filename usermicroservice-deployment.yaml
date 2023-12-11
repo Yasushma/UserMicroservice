@@ -1,0 +1,20 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: usermicroservice-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: usermicroservice
+  template:
+    metadata:
+      labels:
+        app: usermicroservice
+    spec:
+      containers:
+        - name: usermicroservice
+          image: pavankumarsangisetti/usermicroservice:latest
+          ports:
+            - containerPort: 5000
